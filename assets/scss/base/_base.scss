@@ -1,13 +1,33 @@
-body {
-    font-family: "Noto Serif TC", "Newsreader", sans-serif ;
-    line-height: 1.5;
-    background-color: #FFFDF5;
+// .eng-font {
+//   font-family: "Newsreader", sans-serif;
+// }
+
+img {
+  max-width: 100%;
+  height: auto;
 }
+
 a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
+  color: inherit;
+  display: inline-block;
 }
-p{
-  margin-bottom: 0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
 }
+
+p {
+  letter-spacing: 0.05em;
+}
+
+// .bi {
+//   font-size: 1.25rem;
+//   @include media-breakpoint-up(lg) {
+//     font-size: 1.5rem;
+//   }
+// }
