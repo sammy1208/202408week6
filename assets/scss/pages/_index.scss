@@ -1,10 +1,26 @@
-.card-img-style{
-  padding-top: 228px;
-  padding-left: 61px;
-}
+// .card-img-style{
+//   padding-top: 228px;
+//   padding-left: 61px;
+// }
 .rounded-card{
-  border-radius: 100px, 0px, 20px, 0px;
+  border-radius: 20px 0px / 20px;
 }
 .bg-color{
   background-color: #FFFBE5;
+}
+.card{
+  background: none;
+  border-color: #ffffff00;
+}
+.btn-outline-secondary-200{
+  border-color: #ffffff00;
+}
+.btn-outline-secondary-100{
+  color: rgba(33, 37, 41, 1);
+  border-color: #ffffff00;
+  font-size: 20px;
+  font-weight: 900;
+}
+.rounded-1{
+  border-radius: 100px;
 }
