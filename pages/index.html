@@ -11,16 +11,12 @@
     <%- include('./layout/header'); -%>
 
     <div class="container-lg py-lg-10">
-      <div class="card text-white rounded-0">
-        <picture>
-          <source srcset="/assets/images/banner-sm.png" media="(max-width: 991px)">
-          <img src="/assets/images/banner.png" class="card-img" alt="Logo">
-        </picture>
+      <div class="banner card text-white rounded-0">
         <div class="card-img-overlay d-flex flex-column justify-content-end justify-content-lg-center text-center text-lg-start">
-          <h5 class="card-title fs-5 mb-lg-2 mb-1 fw-bold">獻給新世代的生活風格誌</h5>
-          <p class="card-text fs-1 mb-lg-5 mb-4 fw-bold">一起探索生活的無限可能</p>
+          <h5 class="card-title fs-lg-5 fs-6 mb-lg-2 mb-1 fw-bold">獻給新世代的生活風格誌</h5>
+          <p class="card-text fs-lg-1 fs-3 mb-lg-5 mb-4 fw-bold">一起探索生活的無限可能</p>
           <div class="mb-8 mb-lg-0">
-            <a class="btn btn-secondary-200 py-3 px-4 align-middle" href="#" role="button">馬上訂閱<i class="bi bi-arrow-right ms-2 fs-4 align-middle"></i></a>
+            <a class="btn btn-secondary-200 " href="#" role="button">馬上訂閱<i class="bi bi-arrow-right ms-2"></i></a>
           </div>
         </div>
       </div>
@@ -28,11 +24,11 @@
 
     <div class="container py-lg-10 py-8">
       <h2 class="mb-5">熱門主題</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2">
         <div class="col mb-lg-5 mb-1">
           <div class="card text-white">
             <picture>
-              <source srcset="/assets/images/theme-1-sm.png" media="(max-width: 576px)">
+              <source srcset="/assets/images/theme-1-sm.png" media="(max-width: 992px)">
               <img src="/assets/images/theme-1.png" class="card-img rounded-card" alt="...">
             </picture>
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
@@ -44,7 +40,7 @@
         <div class="col mb-lg-5 mb-1">
           <div class="card text-white">
             <picture>
-              <source srcset="/assets/images/theme-2-sm.png" media="(max-width: 576px)">
+              <source srcset="/assets/images/theme-2-sm.png" media="(max-width: 992px)">
               <img src="/assets/images/theme-2.png" class="card-img rounded-card" alt="...">
             </picture>
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
@@ -55,7 +51,7 @@
         <div class="col mb-lg-5 mb-1">
           <div class="card text-white">
             <picture>
-              <source srcset="/assets/images/theme-3-sm.png" media="(max-width: 576px)">
+              <source srcset="/assets/images/theme-3-sm.png" media="(max-width: 992px)">
               <img src="/assets/images/theme-3.png" class="card-img rounded-card" alt="...">
             </picture>
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
@@ -67,7 +63,7 @@
         <div class="col mb-lg-5 mb-1">
           <div class="card text-white">
             <picture>
-              <source srcset="/assets/images/theme-4-sm.png" media="(max-width: 576px)">
+              <source srcset="/assets/images/theme-4-sm.png" media="(max-width: 992px)">
               <img src="/assets/images/theme-4.png" class="card-img rounded-card" alt="...">
             </picture>
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
@@ -79,7 +75,7 @@
         <div class="col mb-lg-5 mb-1">
           <div class="card text-white">
             <picture>
-              <source srcset="/assets/images/theme-4-sm.png" media="(max-width: 576px)">
+              <source srcset="/assets/images/theme-4-sm.png" media="(max-width: 992px)">
               <img src="/assets/images/theme-4.png" class="card-img rounded-card" alt="...">
             </picture>
             <div class="card-img-overlay d-flex align-items-center justify-content-center">
@@ -98,24 +94,27 @@
           <h2 class="mb-4">精選文章</h2>
         </div>
         <div class="col-lg-8 swiper swiper1">
-          <div class="row swiper-wrapper">
+          <div class="row swiper-wrapper row-cols-1 row-cols-lg-2">
             <div class="col swiper-slide">
-              <div class="card border-gray-500 border-bottom">
+              <div class="card border-0 border-bottom border-gray-500">
                 <img src="/assets/images/articles-1.png" class="card-img-top" alt="...">
                 <div class="card-body ps-0 py-5">
                   <h5 class="card-title">私人島嶼的露營奇遇記</h5>
                   <p class="card-text mb-5">遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
-                  <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">Read More</a>
+                  <div class="mt-auto">
+                    <a href="#" class="text-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">Read More</a>
+                  </div>
+
                 </div>
               </div>
             </div>
             <div class="col swiper-slide">
-              <div class="card border-gray-500 border-bottom">
+              <div class="card border-0 border-bottom border-gray-500">
                 <img src="/assets/images/articles-2.png" class="card-img-top" alt="...">
                 <div class="card-body ps-0 py-5">
                   <h5 class="card-title">窺探米其林三星主廚的絕密手藝</h5>
                   <p class="card-text mb-5">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
-                  <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">Read More</a>
+                  <a href="#" class="text-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">Read More</a>
                 </div>
               </div>
             </div>
@@ -131,15 +130,15 @@
           <div class="text-center">
             <h4 class="text-primary-400 pb-4">  \ 母親節強檔活動 / </h4>
             <h2 class="pb-4">家庭訂閱方案限時 7 折</h2>
-            <ul class="text-secondary">
-              <li class=" pb-3">每月最新文章無限閱讀</li>
-              <li class=" pb-3">專屬會員限定內容</li>
-              <li class=" pb-3">定期電子報</li>
-              <li class=" pb-3">年度精選禮物</li>
-              <li class=" pb-3">24 /7 優先客戶服務</li>
-              <li class=" pb-7">為每個成員量身打造專屬行程</li>
+            <ul class="text-secondary list-unstyled">
+              <li class=" pb-3"><i class="bi bi-check me-1"></i>每月最新文章無限閱讀</li>
+              <li class=" pb-3"><i class="bi bi-check me-1"></i>專屬會員限定內容</li>
+              <li class=" pb-3"><i class="bi bi-check me-1"></i>定期電子報</li>
+              <li class=" pb-3"><i class="bi bi-check me-1"></i>年度精選禮物</li>
+              <li class=" pb-3"><i class="bi bi-check me-1"></i>24 /7 優先客戶服務</li>
+              <li class=" pb-7"><i class="bi bi-check me-1"></i>為每個成員量身打造專屬行程</li>
             </ul>
-            <a class="btn btn-secondary-200 py-3 px-4" href="#" role="button">我想了解</a>
+            <a class="btn btn-secondary-200" href="#" role="button">我想了解</a>
           </div>
         </div>
       </div>
@@ -164,7 +163,7 @@
       <div class="container py-10">
         <h2 class="mb-7">大家都在看</h2>
         <div class="container">
-          <div class="row">
+          <div class="row d-none d-lg-flex">
             <div class="col-3">
               <div class="bg-white d-flex flex-column px-5 pt-5 h-100">
                 <div class="btn-group-vertical" role="group" aria-label="Basic outlined example">
@@ -180,28 +179,50 @@
               <div class="d-flex bg-white p-7">
                 <div class="">
                   <h4 class="text-secondary-200 pb-5">酒精路跑地圖</h4>
-                  <ul class="fw-bold">
+                  <ul class="fw-bold list-unstyled">
                     <li class="pb-4">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
                     <li class="pb-4">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
                     <li class="pb-7">｜台南老宅手工酒藏,尋味百年人文釀意</li>
                   </ul>
-                  <div class="d-flex">
-                    <img src="/assets/images/hots-1.png" alt="" class="pe-1 rounded-1">
-                    <img src="/assets/images/hots-2.png" alt="" class="pe-1">
-                    <img src="/assets/images/hots-3.png" alt="" class="pe-1">
-                    <img src="/assets/images/hots-4.png" alt="" class="">
-                  </div>
+                    <ul class="d-flex justify-content-between list-unstyled">
+                      <li>
+                        <img src="/assets/images/hots-1.png" alt="" class="pe-1 rounded-1">
+                      </li>
+                      <li>
+                        <img src="/assets/images/hots-2.png" alt="" class="pe-1">
+                      </li>
+                      <li>
+                        <img src="/assets/images/hots-3.png" alt="" class="pe-1">
+                      </li>
+                      <li>
+                        <img src="/assets/images/hots-4.png" alt="" class="">
+                      </li>
+                    </ul>
+
                   <div class="d-flex justify-content-between align-items-center mt-7">
                     <div>
                       <span class="badge bg-primary-300 text-primary-400 pe-3">#夜貓行程</span>
                       <span class="badge bg-primary-300 text-primary-400 pe-3">#barhopping</span>
                       <span class="badge bg-primary-300 text-primary-400">#全台酒吧</span>
                     </div>
-                    <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1 ms-auto">Read More<i class="bi bi-arrow-right align-text-top ms-2"></i></a>
+                    <a href="#" class="text-secondary-200 fw-bold fs-5 ps-0 font-fam py-1 ms-auto">Read More<i class="bi bi-arrow-right align-text-top ms-2"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="card d-lg-none bg-white p-3">
+              <h4 class="text-secondary-200 pb-5">酒精路跑地圖</h4>
+              <ul class="fw-bold">
+                <li class="pb-4">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                <li class="pb-4">｜你要的調酒師在這裡！五月全台酒吧客座活動整理</li>
+                <li class="pb-7">｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                </ul>
+              <img src="/assets/images/hots-1-sm.png" class="card-img-top" alt="...">
+              <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">Read More</a>
+            </div>
+          </div>
+          <div class="">
           </div>
         </div>
       </div>
@@ -220,7 +241,7 @@
                 <p class="card-text fs-5 fw-bolder mb-4">｜探秘成都的地道川味秘技與魅力</p>
                 <p class="card-text fs-5 fw-bolder mb-4">｜義大利釀酒師對於酒的堅持執著</p>
                 <div class=" text-center">
-                  <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">View More<i class="bi bi-arrow-right ms-2 align-text-top"></i></a>
+                  <a href="#" class="text-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">View More<i class="bi bi-arrow-right ms-2 align-text-top"></i></a>
                 </div>
               </div>
             </div>
@@ -234,7 +255,7 @@
                 <p class="card-text fs-5 fw-bolder mb-4">｜探秘成都的地道川味秘技與魅力</p>
                 <p class="card-text fs-5 fw-bolder mb-4">｜義大利釀酒師對於酒的堅持執著</p>
                 <div class=" text-center">
-                  <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">View More<i class="bi bi-arrow-right ms-2 align-text-top"></i></a>
+                  <a href="#" class="text-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">View More<i class="bi bi-arrow-right ms-2 align-text-top"></i></a>
                 </div>
               </div>
             </div>
@@ -248,7 +269,7 @@
                 <p class="card-text fs-5 fw-bolder mb-4">｜探秘成都的地道川味秘技與魅力</p>
                 <p class="card-text fs-5 fw-bolder mb-4">｜義大利釀酒師對於酒的堅持執著</p>
                 <div class=" text-center">
-                  <a href="#" class="btn btn-outline-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">View More<i class="bi bi-arrow-right ms-2 align-text-top"></i></a>
+                  <a href="#" class="text-secondary-200 fw-bold fs-5 ps-0 font-fam py-1">View More<i class="bi bi-arrow-right ms-2 align-text-top"></i></a>
                 </div>
               </div>
             </div>
@@ -265,45 +286,57 @@
               <h5 class="fs-5 mb-2 text-secondary">今天又不知道要去哪裡了嗎？</h5>
               <p class="fs-2 mb-5 fw-bold">Vivre 給你意想不到的生活風格提案</p>
               <div>
-                <a class="btn btn-secondary-200 py-3 px-4 align-middle" href="#" role="button">馬上訂閱<i class="bi bi-arrow-right ms-2 fs-4 align-middle"></i></a>
+                <a class="btn btn-secondary-200 mb-8 mb-lg-0" href="#" role="button">馬上訂閱<i class="bi bi-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
           <div class="col">
-              <div class="row row-cols-lg-2 row-cols-1 flex-wrap">
-                <div class="col mt-5">
-                  <div class="card text-white">
+              <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1 flex-wrap">
+                <div class="col mt-lg-5 mt-md-6 mb-5 mb-lg-0">
+                  <div class="card text-white position-relative">
+                    <img src="/assets/images/projects-2.png" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end py-0">
+                      <div class="badge bg-white border border-secondary-100 text-secondary-300 position-absolute translate-middle-y top-0 start-0 ms-3 py-1
+                      "><i class="bi bi-caret-right-fill pe-1"></i>人氣行程</div>
+                      <div class="position-absolute top-0 start-0">
+                      </div>
+                      <p class="card-title fw-bold pb-0 fs-6 d-flex align-items-center justify-content-between">親子露營要帶什麼？<i class="bi bi-arrow-right fs-5"></i></p>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                  <div class="card text-white position-relative">
                     <img src="/assets/images/projects-1.png" class="card-img" alt="...">
                     <div class="card-img-overlay d-flex flex-column justify-content-end py-0">
-                      <div>
-                        <span class="badge bg-white border border-secondary-100 text-secondary-300"><i class="bi bi-caret-right-fill pe-1"></i>人氣行程</span>
+                      <div class="badge bg-white border border-secondary-100 text-secondary-300 position-absolute translate-middle-y top-0 start-0 ms-3 py-1
+                      "><i class="bi bi-caret-right-fill pe-1"></i>編輯推薦</div>
+                      <div class="position-absolute top-0 start-0">
                       </div>
-                      <p class="card-title fw-bold mb-0">親子露營要帶什麼？<i class="bi bi-arrow-right fs-5 align-middle"></i></p>
-                      
+                      <p class="card-title fw-bold pb-0 fs-6 d-flex align-items-center justify-content-between">山女孩的健行筆記<i class="bi bi-arrow-right fs-5"></i></p>                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col mt-lg-5 mt-md-6 mb-5 mb-lg-0">
+                  <div class="card text-white position-relative">
+                    <img src="/assets/images/projects-4.png" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end py-0">
+                      <div class="badge bg-white border border-secondary-100 text-secondary-300 position-absolute translate-middle-y top-0 start-0 ms-3 py-1
+                      "><i class="bi bi-caret-right-fill pe-1"></i>編輯推薦</div>
+                      <div class="position-absolute top-0 start-0">
+                      </div>
+                      <p class="card-title fw-bold pb-0 fs-6 d-flex align-items-center justify-content-between">質感房間改造攻略！<i class="bi bi-arrow-right fs-5"></i></p>                     
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card text-white">
-                    <img src="/assets/images/projects-1.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">2</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mt-5">
-                  <div class="card text-white">
-                    <img src="/assets/images/projects-1.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">3</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card text-white">
-                    <img src="/assets/images/projects-1.png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">4</h5>
+                  <div class="card text-white position-relative">
+                    <img src="/assets/images/projects-3.png" class="card-img" alt="...">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end py-0">
+                      <div class="badge bg-white border border-secondary-100 text-secondary-300 position-absolute translate-middle-y top-0 start-0 ms-3 py-1
+                      "><i class="bi bi-caret-right-fill pe-1"></i>熱門文章</div>
+                      <div class="position-absolute top-0 start-0">
+                      </div>
+                      <p class="card-title fw-bold pb-0 fs-6 d-flex align-items-center justify-content-between">適合溜小孩的海邊景點推薦<i class="bi bi-arrow-right fs-5"></i></p>                     
                     </div>
                   </div>
                 </div>
@@ -323,7 +356,7 @@
             <p class="fs-4 fw-bold mb-lg-3 text-center mb-6">歡迎投稿與我們分享</p>
             <div class="w-100">
               <div class="text-lg-end text-center">
-                <a class="btn btn-secondary-200 py-3 px-4" href="#" role="button">聯絡我們</a>
+                <a class="btn btn-secondary-200" href="#" role="button">聯絡我們</a>
               </div>
             </div>
           </div>

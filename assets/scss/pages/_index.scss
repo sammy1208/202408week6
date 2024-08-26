@@ -24,3 +24,15 @@
 .rounded-1{
   border-radius: 100px;
 }
+.card-border{
+  border-bottom: #343A40 1px;
+}
+.banner{
+  background-image: url(/assets/images/banner.png);
+  height: 621px;
+  background-size: cover;
+  @media (max-width: 768px) {   
+    background-image: url(/assets/images/banner-sm.png);
+    background-size: cover;
+  }
+}
